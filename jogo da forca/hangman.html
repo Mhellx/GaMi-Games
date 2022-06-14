@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<link rel="forca icon" href="imagens/icone.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="arquivos/style.css">
+</head>
+<body>
+    <div class="winning-message" data-winning-message>
+        <p class="winning-message-text" data-winning-message-text></p>
+        <button class="winning-message-button" data-restart-button onclick="window.location.reload()">Jogar Novamente</button>
+    </div>
+    <header class="flex-container-1">
+        <br>
+        <br>
+        <br>
+    </header>
+    <section class="flex-container-2">
+        <img id="forca" src="imagens/forca.png" alt="Forca">
+        <div id="palavra" class="flex-container-2-2">
+        </div>
+        <div id="novo"></div>
+    </section>
+    <section id="letras" class="flex-container-3">   
+    </section>
+    <script src="arquivos/script.js"></script>
+</body>
+</html>
