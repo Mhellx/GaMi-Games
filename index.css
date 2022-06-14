@@ -28,7 +28,7 @@ body {
     transform: translate(-50%);
     display: flex;
 }
-.bar1, .bar2, .bar3{
+.bar1, .bar2, .bar3, .bar4, .bar5{
     width: 70px;
     height: 17px;
     border: 2px solid white;
@@ -41,16 +41,16 @@ body {
     background-color: white;
 }
 
-#slide1, #slide2, #slide3 {
+#slide1, #slide2, #slide3, #slide4, #slide5 {
     display:none;
 }
 .slides {
     display: flex;
-    width: 300%;
+    width: 500%;
     height: 100%;
 }
 .slide {
-    width: 33.333%;
+    width: 20%;
     transition: .6s;
 }
 .slide img {
@@ -70,10 +70,16 @@ body {
     transform: scale(1.2);
 }
 #slide2:checked ~ .s1 {
-    margin-left: -33.333%;
+    margin-left: -20%;
 }
 #slide3:checked ~ .s1 {
-    margin-left: -66.666%;
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
 }
 #slide1:checked ~ .navigation .bar1{
     background: white;
@@ -84,6 +90,14 @@ body {
     cursor: default;
 }
 #slide3:checked ~ .navigation .bar3{
+    background: white;
+    cursor: default;
+}
+#slide4:checked ~ .navigation .bar4{
+    background: white;
+    cursor: default;
+}
+#slide5:checked ~ .navigation .bar5{
     background: white;
     cursor: default;
 }
