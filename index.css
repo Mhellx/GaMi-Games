@@ -23,7 +23,7 @@ body {
 }
 .navigation {
     position: absolute;
-    bottom: -40px;
+    bottom: -30px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
