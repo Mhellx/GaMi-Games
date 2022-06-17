@@ -204,6 +204,7 @@ footer{
 }
 footer img{
     height: 40px;
+    transition: 0.5s;
 }
 span{
     font-size: 23.5px;
@@ -221,6 +222,9 @@ span{
     margin-top: 20px;
     margin-left: 120px;
 }
+footer img:hover{
+    transform: scale(1.1);
+}
 button{
     margin-top: 20px;
     width: 400px;
@@ -231,8 +235,10 @@ button{
     color: white;
     font-size: 25px;
     font-family: 'Press Start 2P', cursive;
+    transition: 0.5s;
 }
 button:hover{
     background-color: white;
     color: rgb(16, 17, 20);
+    transform: scale(1.1);
 }
