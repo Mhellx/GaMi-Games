@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="arquivos/style.css">
 </head>
 <body>
-    <div class="winning-message" data-winning-message>
-        <p class="winning-message-text" data-winning-message-text></p>
-        <button class="winning-message-button" data-restart-button onclick="window.location.reload()">Jogar Novamente</button>
-    </div>
-    <header class="flex-container-1">
-        <br>
-        <br>
-        <br>
+    <header class="dica">
+        <p data-dica></p>
     </header>
     <section class="flex-container-2">
         <img id="forca" src="imagens/forca.png" alt="Forca">
@@ -25,6 +19,10 @@
     </section>
     <section id="letras" class="flex-container-3">   
     </section>
+    <div class="winning-message" data-winning-message>
+        <p class="winning-message-text" data-winning-message-text></p>
+        <button class="winning-message-button" data-restart-button onclick="window.location.reload()">Jogar Novamente</button>
+    </div>
     <script src="arquivos/script.js"></script>
 </body>
 </html>

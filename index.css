@@ -242,3 +242,6 @@ button:hover{
     color: rgb(16, 17, 20);
     transform: scale(1.1);
 }
+.noselect {
+    user-select: none;
+}

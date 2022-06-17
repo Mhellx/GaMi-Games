@@ -1,6 +1,18 @@
-let palavras = ["tartaruga", "zebra", "macaco", "lobo", "pinguim", "cabra", "ovelha", "anta", "cavalo", "lagarto", "tigre", "elefante", "canguru", "baleia"];
+let palavras = [
+    nomes = ("michell", "gabriel", "higor", "luiz"),
+    animais = ("tartaruga", "zebra", "macaco", "lobo", "pinguim", "cabra", "ovelha", "anta", "cavalo", "lagarto", "tigre", "elefante", "canguru", "baleia")];
+
+
+let dica = document.querySelector("[data-dica]");
 
 let palavra = palavras[Math.floor(Math.random() * palavras.length)];
+
+if(animais == palavra){
+    dica.innerText = 'Dica: Animal'
+};
+if(nomes == palavra){
+    dica.innerText = 'Dica: Nome'
+};
 
 let winningMessageTextElement = document.querySelector("[data-winning-message-text]");
 
