@@ -1,29 +1,38 @@
-h1{
-    margin-top: -100px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(16, 17, 20);
     height: 350px;
-    width: 700px;
+    width: 750px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+h1{
+    margin-top: -20px;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+.logo img{
+    position:absolute;
+    width: 150px;
+    margin-top: -130px;
+    margin-left: 300px;
 }
 .content {
     height: 350px;
-    width: 700px;
+    width: 750px;
     border-radius: 20px;
     overflow: hidden;
     border: 2px solid black;
 }
 .navigation {
     position: absolute;
-    bottom: -30px;
+    bottom: -70px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -100,4 +109,130 @@ body {
 #slide5:checked ~ .navigation .bar5{
     background: white;
     cursor: default;
+}
+.seta{
+    margin-top: 60px;
+    height: 500px;
+    width: 300%;
+    margin-left: -500px;
+    background: linear-gradient(-45deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
+    background-size: 300% 300%;
+    animation: degrade 30s ease alternate infinite;
+    animation-delay: 0s;
+}
+@keyframes degrade{
+    from{
+        background-position: 0 1%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+.seta.down{
+    position: absolute;
+    padding: 20px;
+    height: 2px;
+    width: 2px;
+    background: transparent;
+    box-shadow: 2px -2px 0 1px white inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin-left: 854px;
+    background-size: contain;
+    transform: rotate(-45deg);
+    animation-name: setadown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.seta.up{
+    position: absolute;
+    padding: 20px;
+    height: 2px;
+    width: 2px;
+    background: transparent;
+    box-shadow: 2px -2px 0 1px white inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin-left: 854px;
+    background-size: contain;
+    transform: rotate(135deg);
+    animation-name: setaup;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hidden{
+    display: none;
+}
+@keyframes setadown{
+    0%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 5px;
+    }
+}
+@keyframes setaup{
+    0%{
+        margin-top: 15px;
+    }
+    100%{
+        margin-top: 30px;
+    }
+}
+.seta:hover{
+    box-shadow: 2px -2px 0 1px rgb(16, 17, 20) inset;
+}
+h2{
+    margin-top: -420px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+footer{
+    margin-left: 180px;
+    display: none;
+}
+footer img{
+    height: 40px;
+}
+span{
+    font-size: 23.5px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+.show{
+    display: flex;
+}
+#instaGa{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+#instaMi{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+button{
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+}
+button:hover{
+    background-color: white;
+    color: rgb(16, 17, 20);
 }
