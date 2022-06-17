@@ -1,8 +1,15 @@
 let palavras = [
-    nomes = ("michell", "gabriel", "higor", "luiz"),
-    animais = ("tartaruga", "zebra", "macaco", "lobo", "pinguim", "cabra", "ovelha", "anta", "cavalo", "lagarto", "tigre", "elefante", "canguru", "baleia")];
-
-
+    nomes = ("michell", "gabriel", "higor", "luiz", "bianca", "clara", "diana", "cristiane"),
+    frutas = ("morango", "abacate", "coco", "goiaba", "framboesa", "kiwi", "cereja", "laranja"),
+    informatica = ("programa", "hardware", "software", "internet", "navegador", "script" , "sistemas", "planilha"),
+    estado = ("pernabuco", "amazonas", "bahia", "acre", "roraima", "sergipe", "tocantins", "alagoas"),
+    planetas = ("saturno", "urano", "netuno", "marte", "terra"),
+    carros =  ("lancer", "uno", "veneno", "corsa", "celta", "fusca", "astra", "prisma"),
+    games = ("minecraft", "pou", "paladins", "forza", "hungman", "valorant", "fortnite", "control"),
+    fastfood = ("bobs", "subway", "girafas", "kfc", "habibs", "popeyes"),
+    times= ("vasco", "corinthians", "santos", "palmeiras", "gremio", "chelsea", "juventus", "barcelona"),
+    animais = ("tartaruga", "zebra", "macaco", "lobo", "pinguim", "cabra", "ovelha", "anta")];
+    
 let dica = document.querySelector("[data-dica]");
 
 let palavra = palavras[Math.floor(Math.random() * palavras.length)];
@@ -12,6 +19,30 @@ if(animais == palavra){
 };
 if(nomes == palavra){
     dica.innerText = 'Dica: Nome'
+};
+if(frutas == palavra){
+    dica.innerText = 'Dica: Fruta'
+};
+if(informatica == palavra){
+    dica.innerText = 'Dica: Informática'
+};
+if(estado == palavra){
+    dica.innerText = 'Dica: Estado Brasileiro'
+};
+if(planetas == palavra){
+    dica.innerText = 'Dica: Planeta'
+};
+if(carros == palavra){
+    dica.innerText = 'Dica: Carro'
+};
+if(games == palavra){
+    dica.innerText = 'Dica: Game'
+};
+if(fastfood == palavra){
+    dica.innerText = 'Dica: Fast Food'
+};
+if(times == palavra){
+    dica.innerText = 'Dica: Time de Futebol'
 };
 
 let winningMessageTextElement = document.querySelector("[data-winning-message-text]");
