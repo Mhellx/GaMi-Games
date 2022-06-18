@@ -15,34 +15,34 @@ let dica = document.querySelector("[data-dica]");
 let palavras = temas[Math.floor(Math.random() * temas.length)];
 let palavra = palavras[Math.floor(Math.random() * palavras.length)];
 
-if(animais == palavra){
+if(animais == palavras){
     dica.innerText = 'Dica: Animal'
 };
-if(nomes == palavra){
+if(nomes == palavras){
     dica.innerText = 'Dica: Nome'
 };
-if(frutas == palavra){
+if(frutas == palavras){
     dica.innerText = 'Dica: Fruta'
 };
-if(informatica == palavra){
+if(informatica == palavras){
     dica.innerText = 'Dica: Informática'
 };
-if(estado == palavra){
+if(estado == palavras){
     dica.innerText = 'Dica: Estado Brasileiro'
 };
-if(planetas == palavra){
+if(planetas == palavras){
     dica.innerText = 'Dica: Planeta'
 };
-if(carros == palavra){
+if(carros == palavras){
     dica.innerText = 'Dica: Carro'
 };
-if(games == palavra){
+if(games == palavras){
     dica.innerText = 'Dica: Game'
 };
-if(fastfood == palavra){
+if(fastfood == palavras){
     dica.innerText = 'Dica: Fast Food'
 };
-if(times == palavra){
+if(times == palavras){
     dica.innerText = 'Dica: Time de Futebol'
 };
 
