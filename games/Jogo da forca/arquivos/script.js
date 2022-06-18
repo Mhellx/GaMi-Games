@@ -1,14 +1,6 @@
 let palavras = [
     nomes = ("michell", "gabriel", "higor", "luiz", "bianca", "clara", "diana", "cristiane"),
-    frutas = ("morango", "abacate", "coco", "goiaba", "framboesa", "kiwi", "cereja", "laranja"),
-    informatica = ("programa", "hardware", "software", "internet", "navegador", "script" , "sistemas", "planilha"),
-    estado = ("pernabuco", "amazonas", "bahia", "acre", "roraima", "sergipe", "tocantins", "alagoas"),
-    planetas = ("saturno", "urano", "netuno", "marte", "terra"),
-    carros =  ("lancer", "uno", "veneno", "corsa", "celta", "fusca", "astra", "prisma"),
-    games = ("minecraft", "pou", "paladins", "forza", "hungman", "valorant", "fortnite", "control"),
-    fastfood = ("bobs", "subway", "girafas", "kfc", "habibs", "popeyes"),
-    times= ("vasco", "corinthians", "santos", "palmeiras", "gremio", "chelsea", "juventus", "barcelona"),
-    animais = ("tartaruga", "zebra", "macaco", "lobo", "pinguim", "cabra", "ovelha", "anta")];
+    frutas = ("morango", "abacate", "coco", "goiaba", "framboesa", "kiwi", "cereja", "laranja")];
     
 let dica = document.querySelector("[data-dica]");
 
