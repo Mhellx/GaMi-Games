@@ -8,9 +8,6 @@ let palavra = palavras[Math.floor(Math.random() * palavras.length)];
 if(nomes == palavra){
     dica.innerText = 'Dica: Nome'
 };
-if(frutas == palavra){
-    dica.innerText = 'Dica: Fruta'
-};
 
 let winningMessageTextElement = document.querySelector("[data-winning-message-text]");
 
