@@ -1,6 +1,5 @@
 let palavras = [
-    nomes = ("michell", "gabriel", "higor", "luiz", "bianca", "clara", "diana", "cristiane"),
-    frutas = ("morango", "abacate", "coco", "goiaba", "framboesa", "kiwi", "cereja", "laranja")];
+    nomes = ("michell", "gabriel", "higor", "luiz", "bianca", "clara", "diana", "cristiane")];
     
 let dica = document.querySelector("[data-dica]");
 
