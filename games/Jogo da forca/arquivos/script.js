@@ -6,7 +6,7 @@ let temas = [
     planetas = ["saturno", "urano", "netuno", "marte", "terra"],
     carros =  ["lancer", "uno", "veneno", "corsa", "celta", "fusca", "astra", "prisma"],
     games = ["minecraft", "pou", "paladins", "forza", "hungman", "valorant", "fortnite", "control"],
-    fastfood = ["bobs", "subway", "girafas", "kfc", "habibs", "popeyes"],
+    fastfood = ["bobs", "subway", "giraffas", "kfc", "habibs", "popeyes"],
     times= ["vasco", "corinthians", "santos", "palmeiras", "gremio", "chelsea", "juventus", "barcelona"],
     animais = ["tartaruga", "zebra", "macaco", "lobo", "pinguim", "cabra", "ovelha", "anta"]];
     
