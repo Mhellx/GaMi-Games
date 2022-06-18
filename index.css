@@ -112,10 +112,10 @@ h1{
 }
 .seta{
     margin-top: 60px;
-    height: 500px;
-    width: 300%;
-    margin-left: -500px;
-    background: linear-gradient(-45deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
+    height: 2000px;
+    width: 1000%;
+    margin-left: -2500px;
+    background: linear-gradient(90deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
     background-size: 300% 300%;
     animation: degrade 30s ease alternate infinite;
     animation-delay: 0s;
@@ -137,7 +137,7 @@ h1{
     box-shadow: 2px -2px 0 1px white inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
-    margin-left: 854px;
+    margin-left: 2854px;
     background-size: contain;
     transform: rotate(-45deg);
     animation-name: setadown;
@@ -158,7 +158,7 @@ h1{
     box-shadow: 2px -2px 0 1px white inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
-    margin-left: 854px;
+    margin-left: 2854px;
     background-size: contain;
     transform: rotate(135deg);
     animation-name: setaup;
@@ -193,7 +193,7 @@ h1{
     box-shadow: 2px -2px 0 1px rgb(16, 17, 20) inset;
 }
 h2{
-    margin-top: -420px;
+    margin-top: -1920px;
     font-size: 25px;
     color: white;
     font-family: 'Press Start 2P', cursive;
