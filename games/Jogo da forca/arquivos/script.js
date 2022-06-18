@@ -1,4 +1,4 @@
-let palavras = [
+let temas = [
     nomes = ["michell", "gabriel", "higor", "luiz", "bianca", "clara", "diana", "cristiane"],
     frutas = ["morango", "abacate", "coco", "goiaba", "framboesa", "kiwi", "cereja", "laranja"],
     informatica = ["programa", "hardware", "software", "internet", "navegador", "script" , "sistemas", "planilha"],
@@ -12,6 +12,7 @@ let palavras = [
     
 let dica = document.querySelector("[data-dica]");
 
+let palavras = temas[Math.floor(Math.random() * temas.length)];
 let palavra = palavras[Math.floor(Math.random() * palavras.length)];
 
 if(animais == palavra){
