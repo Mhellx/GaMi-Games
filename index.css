@@ -275,6 +275,7 @@ button{
     font-family: 'Press Start 2P', cursive;
     transition: 0.5s;
     animation: flicker-border2 1.5s infinite alternate;
+    cursor: pointer;	
 }
 button:hover{
     background-color: white;
