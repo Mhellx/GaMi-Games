@@ -1,210 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 /* Corpo */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    animation: degrade 30s ease alternate infinite;
-    animation-delay: 2s;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(-45deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
-    background-size: 300% 300%;
+  animation: degrade 30s ease alternate infinite;
+  animation-delay: 2s;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #28d693, #35add1, #e73c7e, #ee7752)
+    no-repeat;
+  background-size: 300% 300%;
 }
-@keyframes degrade{
-    from{
-        background-position: 0 1%;
-    }
-    to {
-        background-position: 100% 100%;
-    }
+@keyframes degrade {
+  from {
+    background-position: 0 1%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 /* # */
 .board {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, auto);
+  display: grid;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
 }
-@keyframes opacity{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Célula */
 .cell {
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    animation-name: celulas;
-    animation-duration: 3s;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation-name: celulas;
+  animation-duration: 3s;
 }
-@keyframes celulas{
-    from {border-color: transparent;}
-    to {border-color: white;}
+@keyframes celulas {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: white;
+  }
 }
-.cell.x, 
-.cell.circle{
-    cursor: not-allowed;
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
 }
-.cell:nth-child(1), 
-.cell:nth-child(2), 
+.cell:nth-child(1),
+.cell:nth-child(2),
 .cell:nth-child(3) {
-    border-top: none;
+  border-top: none;
 }
-.cell:nth-child(1), 
-.cell:nth-child(4), 
+.cell:nth-child(1),
+.cell:nth-child(4),
 .cell:nth-child(7) {
-    border-left: none;
+  border-left: none;
 }
-.cell:nth-child(7), 
-.cell:nth-child(8), 
+.cell:nth-child(7),
+.cell:nth-child(8),
 .cell:nth-child(9) {
-    border-bottom: none;
+  border-bottom: none;
 }
-.cell:nth-child(3), 
-.cell:nth-child(6), 
+.cell:nth-child(3),
+.cell:nth-child(6),
 .cell:nth-child(9) {
-    border-right: none;
+  border-right: none;
 }
 
 /* X */
-.cell.x::before, 
-.cell.x::after, 
+.cell.x::before,
+.cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.x .cell:not(.x):not(.circle):hover::before {
-    content: "";
-    height: calc(100px * 0.15);
-    width: calc(100px * 0.9);
-    background: white;
-    position: absolute;
+  content: "";
+  height: calc(100px * 0.15);
+  width: calc(100px * 0.9);
+  background: white;
+  position: absolute;
 }
 .cell.x::before,
-.cell.x::after{
-    animation-name: cellxbefore;
-    animation-duration: 1s;
+.cell.x::after {
+  animation-name: cellxbefore;
+  animation-duration: 1s;
 }
-@keyframes cellxbefore{
-    from {background-color: rgba(54, 57, 63);}
-    to {background-color: white;}
+@keyframes cellxbefore {
+  from {
+    background-color: rgba(54, 57, 63);
+  }
+  to {
+    background-color: white;
+  }
 }
 .cell.x::before,
 .board.x .cell:not(.x):not(.circle):hover::before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .cell::after,
 .board.x .cell:not(.x):not(.circle):hover::after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.x .cell:not(.x):not(.circle):hover::before {
-    background: rgba(54, 57, 63) !important;
-    animation-name: opacity;
-    animation-duration: 1s;
+  background: rgba(54, 57, 63) !important;
+  animation-name: opacity;
+  animation-duration: 1s;
 }
 
 /* Círculo */
-.cell.circle::before, 
+.cell.circle::before,
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    content: "";
-    height: calc(70px * 0.9);
-    width: calc(70px * 0.9);
-    position: absolute;
-    border-radius: 50%;
-    border: 10px solid white;
+  content: "";
+  height: calc(70px * 0.9);
+  width: calc(70px * 0.9);
+  position: absolute;
+  border-radius: 50%;
+  border: 10px solid white;
 }
 .cell.circle::before,
-.cell.circle::after{
-    animation-name: cellcirclebefore;
-    animation-duration: 1s;
+.cell.circle::after {
+  animation-name: cellcirclebefore;
+  animation-duration: 1s;
 }
-@keyframes cellcirclebefore{
-    from {border: 10px solid rgba(54, 57, 63);}
-    to {border: 10px solid white;}
+@keyframes cellcirclebefore {
+  from {
+    border: 10px solid rgba(54, 57, 63);
+  }
+  to {
+    border: 10px solid white;
+  }
 }
 .board.circle .cell:not(.x):not(.circle):hover::after,
-.board.circle .cell:not(.x):not(.circle):hover::before{
-    border: 10px solid rgba(54, 57, 63) !important;
-    animation-name: opacity;
-    animation-duration: 1s;
+.board.circle .cell:not(.x):not(.circle):hover::before {
+  border: 10px solid rgba(54, 57, 63) !important;
+  animation-name: opacity;
+  animation-duration: 1s;
 }
 
 /* Mensagem de Vitória */
 .winning-message {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    flex-direction: column;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
 }
-.winning-message-button{
-    font-size: 2.5rem;
-    background-color: rgb(218, 0, 109);
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    margin-top: 16px;
-    color: white;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-    font-family: 'Press Start 2P', cursive;
-    height: 90px;
+.winning-message-button {
+  font-size: 2.5rem;
+  background-color: rgb(218, 0, 109);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  color: white;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  font-family: "Press Start 2P", cursive;
+  height: 90px;
 }
-.winning-message-button:hover{
-    background-color: rgb(173, 0, 87);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+.winning-message-button:hover {
+  background-color: rgb(173, 0, 87);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
-.winning-message-text{
-    color:white;
-    font-size: 2.9rem;
-    font-family: 'Press Start 2P', cursive;
+.winning-message-text {
+  color: white;
+  font-size: 2.9rem;
+  font-family: "Press Start 2P", cursive;
 }
-.show-winning-message{
-    display: flex;
-}
-.menu {
-position: absolute; top: 10px;
+.show-winning-message {
+  display: flex;
 }
 .menu {
-position: absolute; top: 10px;
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
 }
 .zoom {
   overflow: hidden;
 }
-
 .zoom img {
   max-width: 100%;
   -moz-transition: all 0.3s;
-  -webkit-animation: all 0.3s;
   transition: all 0.3s;
 }
-.zoom:hover img{
+.zoom:hover img {
   -moz-transform: scale(1.1);
-  -webkit-animation: scale(1.1);
   transform: scale(1.1);
 }

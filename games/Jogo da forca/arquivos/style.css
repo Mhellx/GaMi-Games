@@ -1,184 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-	
-	animation: degrade 30s ease alternate infinite;
-	animation-delay: 2s;
-	height: 97vh;
-	width: 98vw;
-	background: linear-gradient(-45deg, #28d693 , #35add1 , #e73c7e, #ee7752) no-repeat;
-	background-size: 300% 300%;
+  animation: degrade 30s ease alternate infinite;
+  animation-delay: 2s;
+  height: 97vh;
+  width: 98vw;
+  background: linear-gradient(-45deg, #28d693, #35add1, #e73c7e, #ee7752)
+    no-repeat;
+  background-size: 300% 300%;
 
-	
-    font-family: 'Press Start 2P', cursive;
-
+  font-family: "Press Start 2P", cursive;
 }
-
-@keyframes degrade{
-	from{
-		background-position: 0 1%;
-	}
-	to{
-		background-position: 100% 100%
-	}
+@keyframes degrade {
+  from {
+    background-position: 0 1%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 .dica {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
 }
-
 .flex-container-2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .flex-container-2-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  color: white;
+  font-family: "Press Start 2P", cursive;
 }
-
 .flex-container-3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 40px;
-    width: 450px;
-    margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  width: 450px;
+  margin: auto;
 }
-
 h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
-
 p {
-    font-size: 25px;
-    text-transform: uppercase;
+  font-size: 25px;
+  text-transform: uppercase;
 }
-
 span {
-    display: flex;
-    justify-content: center;
-    border-bottom: 3px solid white;
-    width: 40px;
-    margin: 5px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    text-transform: uppercase;
-    transition: 1s;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid white;
+  width: 40px;
+  margin: 5px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  transition: 1s;
 }
-
 button {
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    width: 35px;
-    padding: 10px 0;
-    background-color: transparent;
-    color: #FFFFFF;
-    border: 2px solid #00698C;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Press Start 2P', cursive;
-    transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  width: 35px;
+  padding: 10px 0;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #00698c;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  transition: 0.2s;
 }
-
 button:hover {
-    background-color: #0682ac;
-    transform: scale(1.2);
+  background-color: #0682ac;
+  transform: scale(1.2);
 }
-
 button.novo-bt {
-    width: auto;
-    padding: 10px;
+  width: auto;
+  padding: 10px;
 }
-
-.certa, .certa:hover {
-    background: #0682ac;
-    border: 1px solid #0682ac;
-    cursor: inherit;
-    transform: scale(1);
+.certa,
+.certa:hover {
+  background: #0682ac;
+  border: 1px solid #0682ac;
+  cursor: inherit;
+  transform: scale(1);
 }
-
-.errada, .errada:hover {
-    background: #DC1F27;
-    border: 1px solid #DC1F27;
-    cursor: inherit;
-    transform: scale(1);
+.errada,
+.errada:hover {
+  background: #dc1f27;
+  border: 1px solid #dc1f27;
+  cursor: inherit;
+  transform: scale(1);
 }
 .winning-message {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    flex-direction: column;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
 }
-.winning-message-button{
-    font-size: 2.5rem;
-    background-color: rgb(218, 0, 109);
-    padding: 10px 180px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    margin-top: 20px;
-    color: white;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-    font-family: 'Press Start 2P', cursive;
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    text-transform: uppercase;
+.winning-message-button {
+  font-size: 2.5rem;
+  background-color: rgb(218, 0, 109);
+  padding: 10px 180px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  text-transform: uppercase;
 }
-.winning-message-button:hover{
-    background-color: rgb(173, 0, 87);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+.winning-message-button:hover {
+  background-color: rgb(173, 0, 87);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
-.winning-message-text{
-    color:white;
-    font-size: 2.9rem;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
+.winning-message-text {
+  color: white;
+  font-size: 2.9rem;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
 }
-.show-winning-message{
-    display: flex;
+.show-winning-message {
+  display: flex;
 }
-
 .menu {
-position: absolute; top: 12px;
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
 }
-
 .zoom {
   overflow: hidden;
 }
-
 .zoom img {
   max-width: 100%;
   -moz-transition: all 0.3s;
-  -webkit-animation: all 0.3s;
   transition: all 0.3s;
 }
-.zoom:hover img{
+.zoom:hover img {
   -moz-transform: scale(1.1);
-  -webkit-animation: scale(1.1);
   transform: scale(1.1);
 }
