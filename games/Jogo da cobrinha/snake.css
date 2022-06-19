@@ -112,6 +112,5 @@
     margin-bottom: 20px;
   }
 .menu {
-position: absolute;
-align-items: initial; 
+position: absolute; top:10px; 
 }
