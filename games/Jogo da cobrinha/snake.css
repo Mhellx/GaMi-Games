@@ -129,3 +129,6 @@ position: absolute; top: 10px; left: 60px;
   -webkit-animation: scale(1.1);
   transform: scale(1.1);
 }
+.all-items{
+ position: center;
+}
