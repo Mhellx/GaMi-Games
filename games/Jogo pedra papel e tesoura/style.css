@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Barlow Condensed", sans-serif;
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +40,7 @@ body {
 
 .scoreboard {
   width: 700px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 15px;
   margin-top: 50px;
   height: 150px;
@@ -72,13 +79,14 @@ body {
 }
 
 .hands {
+    background-image: url("/assets/triangle.png");
     background-repeat: no-repeat;
-    width: 470px;
+    width: 476px;
     height: 430px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
     background-position: center;
 }
 
@@ -151,7 +159,6 @@ body {
 .newGame:hover {
   background-color: rgb(247, 0, 255);
   transform: translate3d(0px, -2px, 0px);
-}
 }
 .btn {
   top: 20px;
