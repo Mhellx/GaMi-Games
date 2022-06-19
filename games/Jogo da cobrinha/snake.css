@@ -113,4 +113,5 @@
   }
 .menu {
 position: absolute;
+align-items: initial; 
 }
