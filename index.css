@@ -58,7 +58,7 @@ h1{
         0 0 2rem #bc13fe,
         0 0 0.8rem #bc13fe,
         0 0 2.8rem #bc13fe,
-        inset 0 0 1.3rem #bc13fe;
+        0 0 1.3rem #bc13fe;
     }
     20%, 24%, 55% {        
         box-shadow: none;
@@ -81,7 +81,7 @@ h1{
     transition: .4s;
     animation: flicker-border2 1.5s infinite alternate;
 }
-.bar1:hover, .bar2:hover, .bar3:hover {
+.bar1:hover, .bar2:hover, .bar3:hover, .bar4:hover, .bar5:hover {
     background-color: white;
 }
 
@@ -226,7 +226,7 @@ h1{
     }
 }
 .seta:hover{
-    box-shadow: 2px -2px 0 1px rgb(16, 17, 20) inset;
+    box-shadow: 2px -2px 0 1px #e73c7e inset;
 }
 h2{
     margin-top: -1920px;
@@ -306,8 +306,8 @@ button:hover{
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
         box-shadow: 
         0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        inset 0 0 .4rem #fff;
+        0 0 .4rem #fff,
+        inset 0 0 .8rem #fff;
     }
     20%, 24%, 55% {        
         box-shadow: none;
