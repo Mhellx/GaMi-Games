@@ -187,3 +187,6 @@ body {
 .show-winning-message{
     display: flex;
 }
+.menu {
+position: absolute; top: 10px;
+}
