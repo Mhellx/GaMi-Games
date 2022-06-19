@@ -111,3 +111,6 @@
     align-items: center;
     margin-bottom: 20px;
   }
+.menu {
+position: absolute;
+}
