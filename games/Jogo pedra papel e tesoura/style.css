@@ -161,5 +161,20 @@ body {
   transform: translate3d(0px, -2px, 0px);
 }
 .menu {
-position: absolute;
+position: absolute; top: 10px;
+}
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-animation: all 0.3s;
+  transition: all 0.3s;
+}
+.zoom:hover img{
+  -moz-transform: scale(1.1);
+  -webkit-animation: scale(1.1);
+  transform: scale(1.1);
 }
