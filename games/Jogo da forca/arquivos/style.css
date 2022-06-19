@@ -162,3 +162,6 @@ button.novo-bt {
 .show-winning-message{
     display: flex;
 }
+.menu {
+position: absolute;
+}
