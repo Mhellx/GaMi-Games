@@ -112,6 +112,7 @@ h1{
 }
 #slide1:checked ~ .s1 {
     margin-left: 0;
+    transform: scale(1.2);
 }
 #slide2:checked ~ .s1 {
     margin-left: -16.66%;
