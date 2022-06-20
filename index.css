@@ -162,16 +162,27 @@ h1{
     background: linear-gradient(90deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
     background-size: 300% 300%;
     animation: degrade 30s ease alternate infinite;
-    animation-delay: 2s;
-    animation: flicker-border 1.5s infinite alternate;
+    animation-delay: 0s;
 }
-@keyframes degrade{
-    from{
-        background-position: 0 1%;
+@keyframes degrade {
+  from {
+    background-position: 0 1%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        0 0 1.3rem #bc13fe;
     }
-    to {
-        background-position: 100% 100%;
-    }
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
 }
 .seta.down{
     position: absolute;
