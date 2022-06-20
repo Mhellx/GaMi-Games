@@ -325,3 +325,21 @@ button:hover{
 .noselect {
     user-select: none;
 }
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    margin-left: 10px;
+  }
+  .zoom {
+    overflow: hidden;
+  }
+  .zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .zoom:hover img {
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
