@@ -42,18 +42,6 @@ h1{
     margin-top: -130px;
     margin-left: 300px;
 }
-.zoom {
-    overflow: hidden;
-  }
-  .zoom img {
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .zoom:hover img {
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
-  }
 .content {
     height: 350px;
     width: 750px;
@@ -83,7 +71,7 @@ h1{
     transform: translate(-50%);
     display: flex;
 }
-.bar1, .bar2, .bar3, .bar4, .bar5{
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
     width: 70px;
     height: 17px;
     border: 2px solid white;
@@ -93,11 +81,11 @@ h1{
     transition: .4s;
     animation: flicker-border2 1.5s infinite alternate;
 }
-.bar1:hover, .bar2:hover, .bar3:hover, .bar4:hover, .bar5:hover {
+.bar1:hover, .bar2:hover, .bar3:hover, .bar4:hover, .bar5:hover, .bar6:hover {
     background-color: white;
 }
 
-#slide1, #slide2, #slide3, #slide4, #slide5 {
+#slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
     display:none;
 }
 .slides {
@@ -122,8 +110,8 @@ h1{
     transform: scale(1.2);
 }
 #slide1:checked ~ .s1 {
-    margin-left: 0;
-    transform: scale(1.2);
+    margin-left: 70px;
+    transform: scale(1.4);
 }
 #slide2:checked ~ .s1 {
     margin-left: -20%;
@@ -137,6 +125,10 @@ h1{
 #slide5:checked ~ .s1 {
     margin-left: -80%;
 }
+#slide6:checked ~ .s1 {
+    margin-left: -100%;
+}
+
 #slide1:checked ~ .navigation .bar1{
     background: white;
     cursor: default;
@@ -154,6 +146,10 @@ h1{
     cursor: default;
 }
 #slide5:checked ~ .navigation .bar5{
+    background: white;
+    cursor: default;
+}
+#slide6:checked ~ .navigation .bar6{
     background: white;
     cursor: default;
 }
