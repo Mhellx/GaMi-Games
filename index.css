@@ -162,7 +162,7 @@ h1{
     background: linear-gradient(90deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
     background-size: 300% 300%;
     animation: degrade 30s ease alternate infinite;
-    animation-delay: 0s;
+    animation-delay: 2s;
     animation: flicker-border 1.5s infinite alternate;
 }
 @keyframes degrade{
