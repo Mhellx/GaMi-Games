@@ -91,11 +91,11 @@ h1{
 }
 .slides {
     display: flex;
-    width: 500%;
+    width: 600%;
     height: 100%;
 }
 .slide {
-    width: 20%;
+    width: 16.66%;
     transition: .6s;
 }
 .slide img {
@@ -111,23 +111,22 @@ h1{
     transform: scale(1.2);
 }
 #slide1:checked ~ .s1 {
-    margin-left: 70px;
-    transform: scale(1.4);
+    margin-left: 0;
 }
 #slide2:checked ~ .s1 {
-    margin-left: -20%;
+    margin-left: -16.66%;
 }
 #slide3:checked ~ .s1 {
-    margin-left: -40%;
+    margin-left: -33.33%;
 }
 #slide4:checked ~ .s1 {
-    margin-left: -60%;
+    margin-left: -50%;
 }
 #slide5:checked ~ .s1 {
-    margin-left: -80%;
+    margin-left: -66.66%;
 }
 #slide6:checked ~ .s1 {
-    margin-left: -100%;
+    margin-left: -83.33%;
 }
 
 #slide1:checked ~ .navigation .bar1{
