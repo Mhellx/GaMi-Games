@@ -41,6 +41,7 @@ h1{
     width: 150px;
     margin-top: -130px;
     margin-left: 300px;
+    top: -12px;	
 }
 .content {
     height: 350px;
@@ -90,11 +91,11 @@ h1{
 }
 .slides {
     display: flex;
-    width: 500%;
+    width: 600%;
     height: 100%;
 }
 .slide {
-    width: 20%;
+    width: 16.66%;
     transition: .6s;
 }
 .slide img {
@@ -110,23 +111,23 @@ h1{
     transform: scale(1.2);
 }
 #slide1:checked ~ .s1 {
-    margin-left: 70px;
-    transform: scale(1.4);
+    margin-left: 0;
+    transform: scale(1.2);
 }
 #slide2:checked ~ .s1 {
-    margin-left: -20%;
+    margin-left: -16.66%;
 }
 #slide3:checked ~ .s1 {
-    margin-left: -40%;
+    margin-left: -33.33%;
 }
 #slide4:checked ~ .s1 {
-    margin-left: -60%;
+    margin-left: -50%;
 }
 #slide5:checked ~ .s1 {
-    margin-left: -80%;
+    margin-left: -66.66%;
 }
 #slide6:checked ~ .s1 {
-    margin-left: -100%;
+    margin-left: -83.33%;
 }
 
 #slide1:checked ~ .navigation .bar1{
@@ -162,15 +163,26 @@ h1{
     background-size: 300% 300%;
     animation: degrade 30s ease alternate infinite;
     animation-delay: 0s;
-    animation: flicker-border 1.5s infinite alternate;
 }
-@keyframes degrade{
-    from{
-        background-position: 0 1%;
+@keyframes degrade {
+  from {
+    background-position: 0 1%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        0 0 1.3rem #bc13fe;
     }
-    to {
-        background-position: 100% 100%;
-    }
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
 }
 .seta.down{
     position: absolute;

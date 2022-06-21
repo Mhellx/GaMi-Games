@@ -39,7 +39,7 @@ document.addEventListener('keydown', (e) => {
       paddle_1.style.top =
         Math.max(
           board_coord.top,
-          paddle_1_coord.top - window.innerHeight * 0.06
+          paddle_1_coord.top - window.innerHeight * 0.1
         ) + 'px';
       paddle_1_coord = paddle_1.getBoundingClientRect();
     }
@@ -47,7 +47,7 @@ document.addEventListener('keydown', (e) => {
       paddle_1.style.top =
         Math.min(
           board_coord.bottom - paddle_common.height,
-          paddle_1_coord.top + window.innerHeight * 0.06
+          paddle_1_coord.top + window.innerHeight * 0.1
         ) + 'px';
       paddle_1_coord = paddle_1.getBoundingClientRect();
     }
