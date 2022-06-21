@@ -25,7 +25,7 @@ body {
 }
 h1{
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
 }
 #board {
@@ -48,10 +48,11 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: default;
+  cursor: pointer;
 }
-.title-clicked {
+.tile-clicked {
   background: rgb(192, 191, 191);
+  cursor: default;
 }
 .x1 {
   color: blue;
@@ -77,9 +78,6 @@ h1{
 .x8 {
   color: gray;
 }
-.bomb{
-    background-color: red;
-}
 #flag-button {
   width: 100px;
   height: 50px;
@@ -87,4 +85,9 @@ h1{
   background-color: lightgray;
   border: 5px solid darkgrey;
   border-radius: 50px;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#flag-button:hover {
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.2);
 }
