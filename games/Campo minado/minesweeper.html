@@ -8,11 +8,19 @@
     <title>Minesweeper</title>
 </head>
 <body>
+    <div class="zoom">
+        <a href="https://gamigame.netlify.app/"> 
+        <img src="menu.png" width="150px" class="menu"></a>
+    </div>
     <h1>Minas: <span id="mines-count">0</span></h1>
     <div id="board">
     </div>
         <br>
         <button id="flag-button">🚩</button>
+        <div class="winning-message" data-winning-message>
+            <p class="winning-message-text" data-winning-message-text></p>
+            <button class="winning-message-button" onclick="window.location.reload()" data-restart-button>Reiniciar!</button>
+        </div>
     <script src="./minesweeper.js"></script>
 </body>
 </html>

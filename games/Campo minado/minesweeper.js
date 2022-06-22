@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 var board = []; // Matriz
 var rows = 8; // Linhas
 var columns = 8; // Colunas
@@ -9,6 +10,10 @@ var tilesClicked = 0; // Quadrados clicados
 var flagEnabled = false; // Bandeira
 
 var gameOver = false;
+
+const winningMessageTextElement = document.querySelector("[data-winning-message-text]");
+const winningMessage = document.querySelector("[data-winning-message]");
+const restartButton = document.querySelector("[data-restart-button]");
 
 window.onload = function(){
     startGame();
@@ -32,6 +37,16 @@ function setMines() {
 function startGame() {
     document.getElementById("mines-count").innerText = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
+    document.addEventListener("mousedown", function(e) {
+        switch(e.buttons) {
+          case 1: 
+              console.log("Left button")
+            break
+          case 2:
+            setFlag();
+            return;
+        }
+    });
     setMines();
 
     for(let r = 0; r < rows; r++) {
@@ -52,11 +67,11 @@ function startGame() {
 function setFlag(){
     if (flagEnabled){
         flagEnabled = false;
-        document.getElementById("flag-button").style.backgroundColor = "lightgray";
+        document.getElementById("flag-button").classList.remove("flagEnable");
     }
     else {
         flagEnabled = true;
-        document.getElementById("flag-button").style.backgroundColor = "darkgray"
+        document.getElementById("flag-button").classList.add("flagEnable");
     }
 }
 
@@ -69,10 +84,15 @@ function clickTile() {
     if (flagEnabled) {
         if (tile.innerText == "") {
             tile.innerText = "🚩";
+            tile.classList.add("flag");
         }
         else if (tile.innerText == "🚩") {
             tile.innerText = "";
+            tile.classList.remove("flag");
         }
+        return;
+    }
+    if(this.classList.contains("flag")){
         return;
     }
 
@@ -80,6 +100,8 @@ function clickTile() {
     if (minesLocation.includes(tile.id)) {
         gameOver = true;
         revealMines();
+        winningMessageTextElement.innerText = "Explodiu!";
+        winningMessage.classList.add("show-winning-message");
         return;
     }
 
@@ -152,7 +174,9 @@ function checkMine(r, c) {
 
     if(tilesClicked == rows * columns - minesCount){
         document.getElementById("mines-count").innerText = "Limpo!";
+        winningMessageTextElement.innerText = "Limpo!";
         gameOver = true;
+        winningMessage.classList.add("show-winning-message");
     }
 }
 

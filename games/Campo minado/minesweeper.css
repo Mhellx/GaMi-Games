@@ -49,6 +49,7 @@ h1{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.5s;
 }
 .tile-clicked {
   background: rgb(192, 191, 191);
@@ -90,4 +91,67 @@ h1{
 #flag-button:hover {
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1.2);
+  background-color: darkgray !important;
+}
+.flagEnable{
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.2);
+  border-color:  rgb(107, 107, 107) !important;
+  background-color: darkgray !important;
+}
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+.winning-message-button {
+  font-size: 2.5rem;
+  background-color: rgb(218, 0, 109);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  color: white;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  font-family: "Press Start 2P", cursive;
+  height: 90px;
+}
+.winning-message-button:hover {
+  background-color: rgb(173, 0, 87);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.winning-message-text {
+  color: white;
+  font-size: 2.9rem;
+  font-family: "Press Start 2P", cursive;
+}
+.show-winning-message {
+  display: flex;
+}
+.menu {
+  position: absolute;
+  top: 10px;
+  margin-left: -650px;
+}
+.zoom {
+  overflow: hidden;
+}
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.zoom:hover img {
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
 }
