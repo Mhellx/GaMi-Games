@@ -138,20 +138,23 @@ h1{
 .show-winning-message {
   display: flex;
 }
+
 .menu {
-  position: absolute;
+  position: absolute; 
   top: 10px;
-  margin-left: -650px;
-}
-.zoom {
-  overflow: hidden;
-}
-.zoom img {
-  max-width: 100%;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.zoom:hover img {
-  -moz-transform: scale(1.1);
-  transform: scale(1.1);
-}
+  left: .5%;
+  margin-left: 50px;
+  }
+
+  .zoom {
+    overflow: hidden;
+  }
+  .zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .zoom:hover img{
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+  }
