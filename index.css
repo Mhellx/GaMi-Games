@@ -154,10 +154,6 @@ h1 {
 #slide7:checked ~ .s1 {
   margin-left: -85.8%;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 #slide1:checked ~ .navigation .bar1 {
   background: white;
   cursor: default;
@@ -182,11 +178,7 @@ h1 {
   background: white;
   cursor: default;
 }
-<<<<<<< Updated upstream
-#slide6:checked ~ .navigation .bar7 {
-=======
 #slide7:checked ~ .navigation .bar7 {
->>>>>>> Stashed changes
   background: white;
   cursor: default;
 }
@@ -296,15 +288,10 @@ h2 {
   animation: flicker-text2 1.5s infinite alternate;
 }
 footer {
-<<<<<<< Updated upstream
   margin-left: 160px;
   display: none;
   position: relative;
   right: 0px;
-=======
-  margin-left: 180px;
-  display: none;
->>>>>>> Stashed changes
 }
 footer img {
   height: 40px;
@@ -323,35 +310,22 @@ span {
   margin-top: 20px;
   margin-left: 0px;
 }
-<<<<<<< Updated upstream
-=======
-#instaMi {
-  margin-top: 20px;
-  margin-left: 120px;
-}
->>>>>>> Stashed changes
 #gmail {
   position: relative;
   top: -61px;
   left: 200px;
 }
-<<<<<<< Updated upstream
 #instaMi {
   margin-top: 20px;
   margin-left: 120px;
 }
-=======
->>>>>>> Stashed changes
 footer img:hover {
   transform: scale(1.1);
 }
 button {
   margin-top: 20px;
-<<<<<<< Updated upstream
   position: relative;
   right: 20px;
-=======
->>>>>>> Stashed changes
   width: 400px;
   height: 50px;
   background-color: transparent;
