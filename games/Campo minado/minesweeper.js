@@ -48,7 +48,8 @@ function startGame() {
         }
     });
     setMines();
-
+    
+    //Cria o quadro
     for(let r = 0; r < rows; r++) {
         let row = [];
         for(let c = 0; c < columns; c++){

@@ -4,6 +4,8 @@
   padding: 0;
 }
 body {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
   animation: degrade 30s ease alternate infinite;
   animation-delay: 2s;
   height: 100vh;
@@ -11,10 +13,9 @@ body {
   background: linear-gradient(-45deg, #28d693, #35add1, #e73c7e, #ee7752)
     no-repeat;
   background-size: 300% 300%;
-  font-family: "Press Start 2P", cursive;
-  text-align: center;
-  overflow: hidden;
   user-select: none;
+  overflow: hidden;
+  color: white;
 }
 @keyframes degrade {
   from {
@@ -24,81 +25,73 @@ body {
     background-position: 100% 100%;
   }
 }
-h1 {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  color: white;
+#title {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-top: 25px;
 }
 #board {
-  width: 400px;
-  height: 400px;
-  border: 10px solid darkgrey;
-  background-color: lightgrey;
+  width: 320px;
   margin: 0 auto;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 10px;
 }
-#board div {
-  width: 48px;
-  height: 48px;
-  border: 1px solid darkgrey;
-
-  /* Texto */
-  font-size: 30px;
+.tile {
+  border: 2px solid lightgray;
+  width: 55px;
+  height: 55px;
+  margin: 2.5px;
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  transition: 0.5s;
 }
-.tile-clicked {
-  background: rgb(192, 191, 191);
-  cursor: default;
+.correct {
+  background-color: #28d693;
+  border-color: white;
 }
-.x1 {
-  color: blue;
+.present {
+  background-color: #e6377a;
+  border-color: white;
 }
-.x2 {
-  color: green;
+.absent {
+  background-color: rgb(54, 57, 63);
+  border-color: white;
 }
-.x3 {
-  color: red;
+#answer {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
-.x4 {
-  color: purple;
+.keyboard-row {
+  width: 410px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-.x5 {
-  color: maroon;
+.key-tile {
+  border: 2px solid lightgray;
+  width: 35px;
+  height: 35px;
+  margin: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.x6 {
-  color: turquoise;
-}
-.x7 {
-  color: black;
-}
-.x8 {
-  color: gray;
-}
-#flag-button {
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  background-color: lightgray;
-  border: 5px solid darkgrey;
-  border-radius: 50px;
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-#flag-button:hover {
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1.2);
-  background-color: darkgray !important;
-}
-.flagEnable {
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1.2);
-  border-color: rgb(107, 107, 107) !important;
-  background-color: darkgray !important;
+.enter-key-tile {
+  border: 2px solid lightgray;
+  width: 76px;
+  height: 35px;
+  margin: 1px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .winning-message {
   display: none;
@@ -143,8 +136,9 @@ h1 {
   position: absolute;
   top: 10px;
   left: 0.5%;
-  margin-left: 50px;
+  margin-left: 10px;
 }
+
 .zoom {
   overflow: hidden;
 }
