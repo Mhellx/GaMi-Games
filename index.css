@@ -1,168 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("./images/wallpaper.gif");
-    background-repeat: no-repeat;
-	background-size:100%;
-    height: 350px;
-    width: 750px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/wallpaper.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 350px;
+  width: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
-h1{
-    margin-top: -20px;
-    margin-bottom: 0;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    animation: flicker-text 1.5s infinite alternate;
+h1 {
+  margin-top: -20px;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  animation: flicker-text 1.5s infinite alternate;
 }
 @keyframes flicker-text {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow:
-        0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 18px #fff,
-        0 0 38px #bc13fe,
-        0 0 73px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 94px #bc13fe,
-        0 0 140px #bc13fe;
-    }
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #bc13fe,
+      0 0 73px #bc13fe, 0 0 80px #bc13fe, 0 0 94px #bc13fe, 0 0 140px #bc13fe;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
-.logo img{
-    position:absolute;
-    width: 150px;
-    margin-top: -130px;
-    margin-left: 300px;
-    top: -12px;	
+.logo img {
+  position: absolute;
+  width: 150px;
+  margin-top: -130px;
+  margin-left: 300px;
+  top: -12px;
 }
 .content {
-    height: 350px;
-    width: 750px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 2px solid white;
-    animation: flicker-border 1.5s infinite alternate;
+  height: 350px;
+  width: 750px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid white;
+  animation: flicker-border 1.5s infinite alternate;
 }
 @keyframes flicker-border {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        box-shadow: 
-        0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #bc13fe,
-        0 0 0.8rem #bc13fe,
-        0 0 2.8rem #bc13fe,
-        0 0 1.3rem #bc13fe;
-    }
-    20%, 24%, 55% {        
-        box-shadow: none;
-    }    
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+      0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, 0 0 1.3rem #bc13fe;
+  }
+  20%,
+  24%,
+  55% {
+    box-shadow: none;
+  }
 }
 .navigation {
-    position: absolute;
-    bottom: -80px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
 }
-.bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
-    width: 70px;
-    height: 17px;
-    border: 2px solid white;
-    margin: 6px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .4s;
-    animation: flicker-border2 1.5s infinite alternate;
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5,
+.bar6,
+.bar7 {
+  width: 70px;
+  height: 17px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  animation: flicker-border2 1.5s infinite alternate;
 }
-.bar1:hover, .bar2:hover, .bar3:hover, .bar4:hover, .bar5:hover, .bar6:hover {
-    background-color: white;
+.bar1:hover,
+.bar2:hover,
+.bar3:hover,
+.bar4:hover,
+.bar5:hover,
+.bar6:hover,
+.bar7:hover {
+  background-color: white;
 }
 
-#slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
-    display:none;
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+  display: none;
 }
 .slides {
-    display: flex;
-    width: 600%;
-    height: 100%;
+  display: flex;
+  width: 700%;
+  height: 100%;
 }
 .slide {
-    width: 16.66%;
-    transition: .6s;
+  width: 14.3%;
+  transition: 0.6s;
 }
 .slide img {
-    width: 100%;
-    height: 100%;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .slide img:hover {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 #slide1:checked ~ .s1 {
-    margin-left: 0;
-    transform: scale(1.2);
+  margin-left: 0;
+  transform: scale(1.2);
 }
 #slide2:checked ~ .s1 {
-    margin-left: -16.66%;
+  margin-left: -14.3%;
 }
 #slide3:checked ~ .s1 {
-    margin-left: -33.33%;
+  margin-left: -28.6%;
 }
 #slide4:checked ~ .s1 {
-    margin-left: -50%;
+  margin-left: -42.9%;
 }
 #slide5:checked ~ .s1 {
-    margin-left: -66.66%;
+  margin-left: -57.2%;
 }
 #slide6:checked ~ .s1 {
-    margin-left: -83.33%;
+  margin-left: -71.5%;
+}
+#slide7:checked ~ .s1 {
+  margin-left: -85.8%;
 }
 
-#slide1:checked ~ .navigation .bar1{
-    background: white;
-    cursor: default;
+#slide1:checked ~ .navigation .bar1 {
+  background: white;
+  cursor: default;
 }
-#slide2:checked ~ .navigation .bar2{
-    background: white;
-    cursor: default;
+#slide2:checked ~ .navigation .bar2 {
+  background: white;
+  cursor: default;
 }
-#slide3:checked ~ .navigation .bar3{
-    background: white;
-    cursor: default;
+#slide3:checked ~ .navigation .bar3 {
+  background: white;
+  cursor: default;
 }
-#slide4:checked ~ .navigation .bar4{
-    background: white;
-    cursor: default;
+#slide4:checked ~ .navigation .bar4 {
+  background: white;
+  cursor: default;
 }
-#slide5:checked ~ .navigation .bar5{
-    background: white;
-    cursor: default;
+#slide5:checked ~ .navigation .bar5 {
+  background: white;
+  cursor: default;
 }
-#slide6:checked ~ .navigation .bar6{
-    background: white;
-    cursor: default;
+#slide6:checked ~ .navigation .bar6 {
+  background: white;
+  cursor: default;
 }
-.seta{
-    margin-top: 60px;
-    height: 2000px;
-    width: 1000%;
-    margin-left: -2500px;
-    background: linear-gradient(90deg, #28d693,#35add1,#e73c7e, #ee7752) no-repeat;
-    background-size: 300% 300%;
-    animation: degrade 30s ease alternate infinite;
-    animation-delay: 0s;
+#slide6:checked ~ .navigation .bar7 {
+  background: white;
+  cursor: default;
+}
+.seta {
+  margin-top: 60px;
+  height: 2000px;
+  width: 1000%;
+  margin-left: -2500px;
+  background: linear-gradient(90deg, #28d693, #35add1, #e73c7e, #ee7752)
+    no-repeat;
+  background-size: 300% 300%;
+  animation: degrade 30s ease alternate infinite;
+  animation-delay: 0s;
 }
 @keyframes degrade {
   from {
@@ -171,196 +201,214 @@ h1{
   to {
     background-position: 100% 100%;
   }
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        box-shadow: 
-        0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #bc13fe,
-        0 0 0.8rem #bc13fe,
-        0 0 2.8rem #bc13fe,
-        0 0 1.3rem #bc13fe;
-    }
-    20%, 24%, 55% {        
-        box-shadow: none;
-    }    
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+      0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, 0 0 1.3rem #bc13fe;
+  }
+  20%,
+  24%,
+  55% {
+    box-shadow: none;
+  }
 }
-.seta.down{
-    position: absolute;
-    padding: 20px;
-    height: 2px;
-    width: 2px;
-    background: transparent;
-    box-shadow: 2px -2px 0 1px white inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin-left: 2854px;
-    background-size: contain;
-    transform: rotate(-45deg);
-    animation-name: setadown;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: 0.5s;
+.seta.down {
+  position: absolute;
+  padding: 20px;
+  height: 2px;
+  width: 2px;
+  background: transparent;
+  box-shadow: 2px -2px 0 1px white inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;
+  margin-left: 2854px;
+  background-size: contain;
+  transform: rotate(-45deg);
+  animation-name: setadown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.seta.up{
-    position: absolute;
-    padding: 20px;
-    height: 2px;
-    width: 2px;
-    background: transparent;
-    box-shadow: 2px -2px 0 1px white inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin-left: 2854px;
-    background-size: contain;
-    transform: rotate(135deg);
-    animation-name: setaup;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: 0.5s;
+.seta.up {
+  position: absolute;
+  padding: 20px;
+  height: 2px;
+  width: 2px;
+  background: transparent;
+  box-shadow: 2px -2px 0 1px white inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;
+  margin-left: 2854px;
+  background-size: contain;
+  transform: rotate(135deg);
+  animation-name: setaup;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-@keyframes setadown{
-    0%{
-        margin-top: -10px;
-    }
-    100%{
-        margin-top: 5px;
-    }
+@keyframes setadown {
+  0% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 5px;
+  }
 }
-@keyframes setaup{
-    0%{
-        margin-top: 15px;
-    }
-    100%{
-        margin-top: 30px;
-    }
+@keyframes setaup {
+  0% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 30px;
+  }
 }
-.seta:hover{
-    box-shadow: 2px -2px 0 1px #e73c7e inset;
+.seta:hover {
+  box-shadow: 2px -2px 0 1px #e73c7e inset;
 }
-h2{
-    margin-top: -1920px;
-    font-size: 25px;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    animation: flicker-text2 1.5s infinite alternate;
+h2 {
+  margin-top: -1920px;
+  font-size: 25px;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  animation: flicker-text2 1.5s infinite alternate;
 }
-footer{
-    margin-left: 160px;
-    display: none;
-    position: relative;
-    right: 0px;
+footer {
+  margin-left: 160px;
+  display: none;
+  position: relative;
+  right: 0px;
 }
-footer img{
-    height: 40px;
-    transition: 0.5s;
+footer img {
+  height: 40px;
+  transition: 0.5s;
 }
-span{
-    font-size: 23.5px;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    animation: flicker-text2 1.5s infinite alternate;
+span {
+  font-size: 23.5px;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  animation: flicker-text2 1.5s infinite alternate;
 }
-.show{
-    display: flex;
+.show {
+  display: flex;
 }
-#instaGa{
-    margin-top: 20px;
-    margin-left: 0px;
+#instaGa {
+  margin-top: 20px;
+  margin-left: 0px;
 }
-#gmail{
-    position: relative;
-    top: -61px;
-    left: 200px;
+#gmail {
+  position: relative;
+  top: -61px;
+  left: 200px;
 }
-#instaMi{
-    margin-top: 20px;
-    margin-left: 120px;
+#instaMi {
+  margin-top: 20px;
+  margin-left: 120px;
 }
-footer img:hover{
-    transform: scale(1.1);
+footer img:hover {
+  transform: scale(1.1);
 }
-button{
-    margin-top: 20px;
-    position: relative;
-    right: 20px;
-    width: 400px;
-    height: 50px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 50px;
-    color: white;
-    font-size: 25px;
-    font-family: 'Press Start 2P', cursive;
-    transition: 0.5s;
-    animation: flicker-border2 1.5s infinite alternate;
-    cursor: pointer;	
+button {
+  margin-top: 20px;
+  position: relative;
+  right: 20px;
+  width: 400px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 25px;
+  font-family: "Press Start 2P", cursive;
+  transition: 0.5s;
+  animation: flicker-border2 1.5s infinite alternate;
+  cursor: pointer;
 }
-button:hover{
-    background-color: white;
-    color: rgb(16, 17, 20);
-    transform: scale(1.1);
-    animation: flicker-border 1.5s infinite alternate;
+button:hover {
+  background-color: white;
+  color: rgb(16, 17, 20);
+  transform: scale(1.1);
+  animation: flicker-border 1.5s infinite alternate;
 }
 @keyframes flicker-text2 {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-        0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 18px #fff;
-        }
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }     
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 @keyframes flicker-border2 {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-        0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 18px #fff;
-        }
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }     
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        box-shadow: 
-        0 0 .2rem #fff,
-        0 0 .4rem #fff,
-        inset 0 0 .8rem #fff;
-    }
-    20%, 24%, 55% {        
-        box-shadow: none;
-    }    
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.4rem #fff, inset 0 0 0.8rem #fff;
+  }
+  20%,
+  24%,
+  55% {
+    box-shadow: none;
+  }
 }
 .noselect {
-    user-select: none;
+  user-select: none;
 }
 .menu {
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    margin-left: 10px;
-  }
-  .zoom {
-    overflow: hidden;
-  }
-  .zoom img {
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .zoom:hover img {
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  margin-left: 10px;
+}
+.zoom {
+  overflow: hidden;
+}
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.zoom:hover img {
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
 }
