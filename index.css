@@ -13,9 +13,6 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
-.audio {
-  display: none;
-}
 h1 {
   margin-top: -20px;
   margin-bottom: 0;
