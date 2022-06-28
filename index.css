@@ -413,7 +413,7 @@ button:hover {
 }
 @media screen and (max-width:600px) {
   body{
-    background-size: 150%;
+    background-size: 300%;
   }
   .tudo {
     display: none;
