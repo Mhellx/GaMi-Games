@@ -417,7 +417,7 @@ button:hover {
   color: white;
   font-family: "Press Start 2P", cursive;
   animation: flicker-text2 1.5s infinite alternate;
-  margin-left: 150px;
+  margin-left: 200px;
 }
 @media screen and (max-width:600px) {
   .alert{
