@@ -411,7 +411,18 @@ button:hover {
   -moz-transform: scale(1.1);
   transform: scale(1.1);
 }
+.alert{
+  display: none;
+  font-size: 23.5px;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  animation: flicker-text2 1.5s infinite alternate;
+  margin-left: 100px;
+}
 @media screen and (max-width:600px) {
+  .alert{
+    display: flex;
+  }
   body{
     background-size: 300%;
   }
