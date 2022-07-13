@@ -1,5 +1,5 @@
 let temas = [
-    nomes = ["michell", "gabriel", "higor", "luiz", "bianca", "clara", "diana", "cristiane"],
+    nomes = ["michell", "gabriel", "higor", "luiz", "bianca", "melissa", "diana", "cristiane"],
     frutas = ["morango", "abacate", "coco", "goiaba", "framboesa", "kiwi", "cereja", "laranja"],
     informatica = ["programa", "hardware", "software", "internet", "navegador", "script" , "sistemas", "planilha"],
     estado = ["pernabuco", "amazonas", "bahia", "acre", "roraima", "sergipe", "tocantins", "alagoas"],
